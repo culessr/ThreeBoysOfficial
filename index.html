@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>threeboys.official | New Drop 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" data-view-link="home" aria-label="threeboys.official home">
+        <span class="brand-mark">TBS</span>
+        <span>threeboys.official</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#about" data-view-link="about" data-i18n="navAbout">About Us</a>
+        <a href="#shop" data-view-link="shop" data-i18n="navShop">Shop</a>
+        <a href="#lookbook" data-view-link="lookbook" data-i18n="navLookbook">Look Book</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="ghost-btn" type="button" id="languageToggle" aria-label="Switch language">
+          ID
+        </button>
+        <button class="ghost-btn" type="button" id="accountOpen" data-i18n="accountBtn">
+          Account
+        </button>
+        <button class="cart-btn" type="button" id="cartOpen" aria-label="Open cart">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-view home-view active" id="home" data-view="home">
+        <div class="hero" aria-label="Threeboys Official campaign">
+          <img src="assets/IMG_5885.PNG" alt="Threeboys Official campaign" class="hero-art" />
+        </div>
+         <a class="home-next-button" href="#shop" data-view-link=" data-i18n="navShop">
+            Shop
+          </a>
+        <address class="contact-strip" aria-label="Threeboys Official social media and contact">
+          <a
+            href="https://www.instagram.com/threeboys.official_?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram @threeboys.official_
+          </a>
+          <a href="https://www.tiktok.com/@tbswear.est2024" target="_blank" rel="noopener noreferrer">
+            TikTok @tbswear.est2024
+          </a>
+          <a href="tel:+6285770552872">Contact Person +62 857-7055-2872</a>
+        </address>
+      </section>
+
+      <section class="page-view about section-shell" id="about" data-view="about">
+        <div class="about-copy">
+          <p data-i18n="aboutCopyOne">
+            Threeboys Official is an independent streetwear brand based in Tangerang, Indonesia,
+            established in 2024. Inspired by youth culture, campus life, and the local creative
+            scene, we create apparel that blends comfort, style, and self-expression into everyday
+            wear.
+          </p>
+          <p data-i18n="aboutCopyTwo">
+            Every collection is released in limited quantities, making each piece more exclusive
+            and meaningful for those who wear it. We believe clothing is more than just fashion—it
+            is a way to express identity, confidence, and belonging.
+          </p>
+          <p data-i18n="aboutCopyThree">
+            Through distinctive graphics, carefully crafted designs, and a growing community,
+            Threeboys Official continues to build a space for individuals who appreciate authentic
+            streetwear and want to stand out while staying comfortable and stylish.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-view shop section-shell" id="shop" data-view="shop">
+        <div class="section-heading">
+          <div>
+            <p class="section-label" data-i18n="shopLabel">Shop</p>
+            <h2 data-i18n="shopTitle">New arrivals</h2>
+          </div>
+          <div class="filter-group" aria-label="Product category filters">
+            <button class="filter-btn active" type="button" data-filter="all" data-i18n="filterAll">All</button>
+            <button class="filter-btn" type="button" data-filter="tops" data-i18n="filterTops">Tops</button>
+            <button class="filter-btn" type="button" data-filter="outerwear" data-i18n="filterOuter">Outerwear</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="page-view lookbook section-shell" id="lookbook" data-view="lookbook">
+        <div class="lookbook-grid">
+          <img src="assets/IMG_1276.WEBP" alt="Threeboys Official editorial look" />
+          <img src="assets/IMG_1275.WEBP" alt="Threeboys Official streetwear look beside a red car" />
+          <video src="assets/IMG_1261.MP4" controls muted playsinline preload="metadata"></video>
+          <img src="assets/IMG_1262.PNG" alt="Threeboys Official black hoodies displayed on a car" />
+          <img src="assets/IMG_1278.WEBP" alt="Threeboys Official hoodie collection displayed on a white car" />
+          <img src="assets/IMG_1279.WEBP" alt="Threeboys Official streetwear campaign" />
+          <img src="assets/IMG_1283.JPG.jpeg" alt="Threeboys Official campaign detail" />
+          <img src="assets/IMG_5764.JPEG" alt="Threeboys Official lookbook portrait" />
+          <img src="assets/IMG_5808.JPG.jpeg" alt="Threeboys Official editorial photograph" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#home" data-view-link="home">
+        <span class="brand-mark">TBS</span>
+        <span>threeboys.official</span>
+      </a>
+      <p data-i18n="footerCopy">Wear comfortably and stylishly. New drop ships from Indonesia.</p>
+    </footer>
+
+    <aside class="drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <h2 data-i18n="cartTitle">Your cart</h2>
+          <button class="icon-btn" type="button" data-close="cartDrawer" aria-label="Close cart">x</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span data-i18n="subtotal">Subtotal</span>
+            <strong id="cartTotal">Rp0</strong>
+          </div>
+          <button class="primary-btn" type="button" id="checkoutBtn" data-i18n="checkout">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="modal" id="accountModal" aria-hidden="true" role="dialog" aria-labelledby="accountTitle">
+      <div class="modal-card">
+        <button class="icon-btn modal-close" type="button" data-close="accountModal" aria-label="Close account modal">x</button>
+        <p class="section-label" data-i18n="accountLabel">Account</p>
+        <h2 id="accountTitle" data-i18n="accountTitle">Create your shopping account</h2>
+        <form id="accountForm" class="account-form">
+          <label>
+            <span data-i18n="nameLabel">Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@email.com" />
+          </label>
+          <label>
+            <span data-i18n="passwordLabel">Password</span>
+            <input type="password" name="password" required minlength="6" placeholder="Minimum 6 characters" />
+          </label>
+          <button class="primary-btn" type="submit" data-i18n="createAccount">Create account</button>
+          <p class="form-note" id="accountMessage" data-i18n="accountNote">
+            Account data is saved locally in this demo.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-label="Product details">
+      <div class="modal-card product-modal-card">
+        <header class="product-detail-header">
+          <nav class="product-detail-nav" aria-label="Product detail navigation">
+            <a href="#shop" data-view-link="shop" data-close="productModal" data-i18n="navShop">Shop</a>
+            <a href="#about" data-view-link="about" data-close="productModal" data-i18n="navAbout">About Us</a>
+            <a href="#lookbook" data-view-link="lookbook" data-close="productModal" data-i18n="navLookbook">Look Book</a>
+          </nav>
+          <a class="product-detail-brand" href="#home" data-view-link="home" data-close="productModal" aria-label="Threeboys Official home">
+            <span class="brand-mark">TBS</span>
+            <span>threeboys.official</span>
+          </a>
+          <button class="icon-btn product-detail-close" type="button" data-close="productModal" aria-label="Kembali ke katalog">x</button>
+        </header>
+        <div id="productDetailContent"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
